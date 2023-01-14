@@ -51,3 +51,21 @@
 
 // const result = number % 2 === 0 ? "парне число" : "не парне число";
 // console.log(result);
+
+
+// ЗАДАЧА 6
+// НАПИШІТЬ ПРОГРАМУ , ДЕ МИ У КОРИСТОВАЧА ПИТАЄМОСЬ МІСЯЦЬ НАРОДЖЕННЯ, І ПОКАЗУЄМО У ЯКУ ПОРУ РОКУ ВІН НАРОДИВСЯ
+
+const month = Number(prompt("Вкажіть місяць вашого народження"));
+
+if (month === 12 || month === 1 || month === 2) {
+    console.log("Зима");
+} else if (month >= 3 && month <= 5) {
+    console.log("Весна");
+} else if (month >= 6 && month <= 8) {
+    console.log("Літо");
+} else if (month >= 9 && month <=11) {
+    console.log("Зима");
+} else {
+    console.log("Такого місяця не існує")
+}
