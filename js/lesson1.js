@@ -56,16 +56,37 @@
 // ЗАДАЧА 6
 // НАПИШІТЬ ПРОГРАМУ , ДЕ МИ У КОРИСТОВАЧА ПИТАЄМОСЬ МІСЯЦЬ НАРОДЖЕННЯ, І ПОКАЗУЄМО У ЯКУ ПОРУ РОКУ ВІН НАРОДИВСЯ
 
-const month = Number(prompt("Вкажіть місяць вашого народження"));
+// const month = Number(prompt("Вкажіть місяць вашого народження"));
 
-if (month === 12 || month === 1 || month === 2) {
-    console.log("Зима");
-} else if (month >= 3 && month <= 5) {
-    console.log("Весна");
-} else if (month >= 6 && month <= 8) {
-    console.log("Літо");
-} else if (month >= 9 && month <=11) {
-    console.log("Зима");
-} else {
-    console.log("Такого місяця не існує")
-}
+// if (month === 12 || month === 1 || month === 2) {
+//     console.log("Зима");
+// } else if (month >= 3 && month <= 5) {
+//     console.log("Весна");
+// } else if (month >= 6 && month <= 8) {
+//     console.log("Літо");
+// } else if (month >= 9 && month <=11) {
+//     console.log("Зима");
+// } else {
+//     console.log("Такого місяця не існує")
+// }
+
+// ЗАДАЧА 7
+// НАПИШІТЬ ПРОГРАМУ, ЯКА ПРОВІРЯЄ ЛОГІН І ПАРОЛЬ, 
+// І ВИВОДИТЬ ПРИВІТАННЯ - ЯКЩО ВСЕ ДОБРЕ, АБО ВИДАЄ ПОМИЛКУ , ЩО НЕ ВІРНИЙ ЛОГІН
+
+const login = "ivan@ukr.net";
+const pas = 54321;
+
+let userLogin = prompt("Ваш логін");
+let userPas = Number(prompt("Ваш пароль"));
+
+// if (login === userLogin && pas === userPas) {
+//     console.log ("Вхід дозволено")
+// } else {
+//     console.log ("Спробуй ще")
+// }
+
+let message = login === userLogin && pas === userPas ? "Вхід дозволено" : "Спробуй ще";
+console.log(message);
+
+
