@@ -74,19 +74,61 @@
 // НАПИШІТЬ ПРОГРАМУ, ЯКА ПРОВІРЯЄ ЛОГІН І ПАРОЛЬ, 
 // І ВИВОДИТЬ ПРИВІТАННЯ - ЯКЩО ВСЕ ДОБРЕ, АБО ВИДАЄ ПОМИЛКУ , ЩО НЕ ВІРНИЙ ЛОГІН
 
-const login = "ivan@ukr.net";
-const pas = 54321;
+// const login = "ivan@ukr.net";
+// const pas = 54321;
 
-let userLogin = prompt("Ваш логін");
-let userPas = Number(prompt("Ваш пароль"));
+// let userLogin = prompt("Ваш логін");
+// let userPas = Number(prompt("Ваш пароль"));
 
-// if (login === userLogin && pas === userPas) {
-//     console.log ("Вхід дозволено")
+// // if (login === userLogin && pas === userPas) {
+// //     console.log ("Вхід дозволено")
+// // } else {
+// //     console.log ("Спробуй ще")
+// // }
+
+// let message = login === userLogin && pas === userPas ? "Вхід дозволено" : "Спробуй ще";
+// console.log(message);
+
+
+
+// ЗАДАЧА 8
+// НАПИШІТЬ ПРОГРАМУ , ЯКА БУДЕ ЗАПИТУВАТИ У КОРИСТУВАЧА ПЕРІОД ПІДПИСКИ НА СЕРВІС ТА ПОКАЗУВАТИМЕ ЦІНУ ПІДПИСКИ(ВИКОРИСТАЙ IF..ELSE, ТА ПЕРЕПИШИ НА SWITCH)
+// ЯКЩО ДЕНЬ - ціна 1.99
+// ЯУЩО НЕДІЛЯ - ціна 5.99
+// ЯКЩО МІСЯЦЬ - ціна 10.99
+// ЯКЩО РІК - ціна 100.99
+
+const period = prompt("Який період підписки вам необхідний: день, тиждень, місяць або рік");
+
+// if (period === 'день') {
+//     console.log("ціна 1.99");
+// } else if (period === 'тиждень') {
+//     console.log("ціна 5.99");
+// } else if (period === 'місяць') {
+//     console.log("ціна 10.99");
+// } else if (period === 'рік') {
+//     console.log("ціна 100.99");
 // } else {
-//     console.log ("Спробуй ще")
+//     console.log("такого періоду не існує");
 // }
 
-let message = login === userLogin && pas === userPas ? "Вхід дозволено" : "Спробуй ще";
-console.log(message);
+// switch (period) {
+//     case 'день':
+//         console.log("ціна 1.99");
+//         break;
 
+//     case 'тиждень':
+//         console.log("ціна 5.99");
+//         break;
 
+//     case 'місяць':
+//         console.log("ціна 10.99");
+//         break;
+
+//     case 'рік':
+//         console.log("ціна 100.99");
+//         break;
+
+//     default:
+//         console.log("такого періоду не існує");
+// }
