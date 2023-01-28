@@ -76,3 +76,35 @@
 
 // let next = str.split('').reverse().join("");
 // console.log(next === str);
+
+// ЗАДАЧА 5
+// Напишіть ф-цію calculateAverage() яка приймає довільну кількість аргументів і повертає їх середнє значення .Всі аргументи будуть тільки числовими
+
+// console.log(calculateAverage(1, 2, 3, 4)); // 2.5
+// console.log(calculateAverage(14, 8, 2)); // 8
+// console.log(calculateAverage(27, 43, 2, 8, 36));// 23.2
+
+
+// function calculateAverage() {
+//     // console.log(arguments);
+
+//     const numbers = Array.from(arguments);
+//     // console.log(numbers);
+
+//     let result = 0;
+//     for (const number of numbers) {
+//         result += number;
+//     }
+//     console.log(result)
+//     const arrayLength = numbers.length;
+
+//     console.log(arrayLength)
+
+//     const midNumber = result / arrayLength;
+
+//     return midNumber;
+// }
+
+// console.log(calculateAverage(1, 2, 3, 4)); // 2.5
+// console.log(calculateAverage(14, 8, 2)); // 8
+// console.log(calculateAverage(27, 43, 2, 8, 36));// 23.2
