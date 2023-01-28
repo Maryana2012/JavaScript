@@ -139,16 +139,16 @@
 //   return `число ${b} більше ${a}`;
 // }
 
-const checkNumbers = (a, b) => {
+// const checkNumbers = (a, b) => {
 
-    if (a > b) {
-    return `число ${a} більше ${b}`;
-  }
+//     if (a > b) {
+//     return `число ${a} більше ${b}`;
+//   }
 
-  return `число ${b} більше ${a}`;
+//   return `число ${b} більше ${a}`;
 
-}
+// }
 
-const checkNumbers = (a, b) => a > b ? `число ${a} більше ${b}` : `число ${b} більше ${a}`;
+// const checkNumbers = (a, b) => a > b ? `число ${a} більше ${b}` : `число ${b} більше ${a}`;
 
 
