@@ -43,9 +43,17 @@
 // // console.log(findSmallestNumber([2, 17, 94, 1, 23, 37]));
 // // console.log(findSmallestNumber([49, 4, 83, 7, 12]));
 
-// const numbers = [2, 17, 94, 1, 23, 37];
-// let smallestNumber = 0;
+// function findSmallestNumber(numbers) {
+//   let smallestNumber = numbers[0];
 
-// for (const number of numbers) {
-//   console.log(number);
+//   for (const number of numbers) {
+//     if (number < smallestNumber) {
+//       smallestNumber = number;
+//     }
+//   }
+
+//   return smallestNumber;
 // }
+
+// console.log(findSmallestNumber([2, 17, 94, 1, 23, 37]));
+// console.log(findSmallestNumber([49, 4, 83, 7, 12]));
