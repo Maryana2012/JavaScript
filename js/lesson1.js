@@ -827,3 +827,14 @@
 
 // console.log(bestScore);
 // console.log(worstScore);
+
+// автоперевірка 30
+function makeTask(data) {
+    const completed = false;
+    const category = "General";
+    const priority = "Normal";
+    // Change code below this line
+    const { category = "General", priority = "Normal", completed } = data;
+    console.log(data);
+}
+// makeTask({});
