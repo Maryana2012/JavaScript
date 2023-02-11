@@ -157,11 +157,16 @@ const scientists = [
 // console.log(years);
 
 // 4)відсортувати по кількості прожитих років;
-const ageSc = [...scientists].sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
-console.log(ageSc);
+// const ageSc = [...scientists].sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
+// console.log(ageSc);
 
-// 5)відфільтрувати, хто народився в 15,16,17ст;
- const bornCent = scientists.filter((scientist) =>
- scientist.born >= 1400 && scientist.born < 1700)
- console.log(bornCent);
+// // 5)відфільтрувати, хто народився в 15,16,17ст;
+//  const bornCent = scientists.filter((scientist) =>
+//  scientist.born >= 1400 && scientist.born < 1700)
+//  console.log(bornCent);
  
+
+//  6)знайти рік народження Albert Einstein;
+
+const albert = scientists.find(scientist => scientist.name === "Albert" && scientist.surname === "Einstein")
+console.log(albert);
