@@ -181,11 +181,22 @@ const scientists = [
 // ЗАДАЧА 4
 // Сортування примітивів.
 // Виконати сортування масиву цін зі спадання та зростання.
-const prices = [2, 14, 1, 37, 26, 8];
-// 
+// const prices = [2, 14, 1, 37, 26, 8];
+// // 
 
-const sortedUp = [...prices].sort((a, b) => a - b);
-console.log(sortedUp);
+// const sortedUp = [...prices].sort((a, b) => a - b);
+// console.log(sortedUp);
 
-const sortedDown = [...prices].sort((a, b) => b - a);
-console.log(sortedDown);
+// const sortedDown = [...prices].sort((a, b) => b - a);
+// console.log(sortedDown);
+
+
+
+// ЗАДАЧА 5
+// Виконати сортування масиву назв моніторів в алфавітному та зворотному алфавітному порядку.
+const items = ["SAMSUNG", "LG", "ASUS", "DELL", "BENQ"];
+
+// const sorted = [...items].sort((a, b) => a.localeCompare(b));
+// const sorted = [...items].sort((a, b) => b.localeCompare(a));
+// const sorted = [...items].sort((a, b) => a > b ? -1 : 1);
+// console.log(sorted)
