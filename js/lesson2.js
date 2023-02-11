@@ -12,6 +12,7 @@
 // Джаз, Классика, Рок-н-ролл
 // Классика, Рок-н-ролл
 // Рэп, Регги, Классика, Рок-н-ролл
+
 // const styles = ['Джаз', 'Блюз'];
 // styles.push('Рок-н-ролл');
 // styles.splice(1, 1, 'Классика');
@@ -175,7 +176,7 @@
 
 
 // ЗАДАЧА 8
-// Напишіть ф-цію capitalize , яка буде приймати рядок і буде 
+// Напишіть ф-цію capitalize , яка буде приймати рядок і буде
 // повертати новий рядок , де кожне слово буде з великої букви
 // capitalize('the quick brown fox')// 'The Quick Brown Fox '
 
@@ -188,14 +189,60 @@
 // updateCourse(oldName, newName)- змінює імя на нове
 // const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
 
-// addCourse("Express"); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
-// addCourse("CSS"); // 'У вас уже є такий курс'
-// removeCourse("React"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
-// removeCourse("Vue"); // 'Курс з таким іменем не найдено'
-// updateCourse("Express", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
-// console.log(courses);
 
-// 
+// const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
+
+// // добавляє курс у кінець колекції
+// function addCourse(name) {
+  
+//   if (courses.includes(name)) {
+//     console.log('У вас уже є такий курс');
+//   } else {
+//     courses.push(name);
+//     console.log(courses);
+//   }
+//   return courses;
+// }
+
+// // видаляє курс із колекції
+// function removeCourse(name) {
+  
+//   if (courses.includes(name)) {
+    
+//     const index = courses.indexOf(name);
+//     courses.splice(index, 1);
+//     console.log(courses);
+//     return courses;
+    
+//   } else
+//   {
+//     return console.log('Курс з таким іменем не найдено');
+//   }
+  
+  
+// }
+
+// // змінює імя на нове
+// function updateCourse(oldName, newName) {
+//   if (courses.includes(oldName)) {
+//     const index = courses.indexOf(oldName);
+//     courses.splice(index, 1, newName);
+//     console.log(courses);
+//     return courses;
+//   } else {
+//     return console.log("такого курсу немає");
+//   }
+// }
+
+
+// addCourse('Express'); //
+// // addCourse("CSS"); // 'У вас уже є такий курс'
+// removeCourse("React"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+// // removeCourse("Vue"); // 'Курс з таким іменем не найдено'
+// updateCourse("Express", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+// // console.log(courses);
+
+
 
 
 //10. Напиши скрипт, который для объекта user,
@@ -287,8 +334,7 @@
   
 
 
-
-
+    
 // МОДУЛЬ 2-3
 
 // ЩО КОНСОЛЬ ВИВЕДЕ НА ЕКРАН
