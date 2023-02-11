@@ -43,7 +43,7 @@
 // 
 // 2)порахувати загальну суму років скільки прожили вчені, 
 // і визначити середнє значення;
-// 3) відсортувати по алфавіту;
+// 3)відсортувати по алфавіту;
 // 4)відсортувати по кількості прожитих років;
 // 5)відфільтрувати, хто народився в 15,16,17ст;
 // 6)знайти рік народження Albert Einstein;
@@ -135,8 +135,23 @@ const scientists = [
       id: 12,
     },
   ];
-//   1)получити масив вчених які народились у 19ст;
+// 1)получити масив вчених які народились у 19ст;
 
-let myScientist = scientists.filter((scientist) => 
-scientist.born >= 1800 && scientist.born < 1900).map((scientist) => `${scientist.name} ${scientist.surname}`)
-console.log(myScientist);
+// let myScientist = scientists.filter((scientist) =>
+// scientist.born >= 1800 && scientist.born < 1900).map((scientist) => `${scientist.name} ${scientist.surname}`)
+// console.log(myScientist);
+
+// 2)порахувати загальну суму років скільки прожили вчені, і визначити середнє значення;
+
+// const totalEayrs = scientists.reduce((acc, scientist) => acc + (scientist.dead - scientist.born), 0);
+// console.log(totalEayrs);
+
+// console.log(totalEayrs / scientists.length);
+
+// 3)відсортувати по алфавіту;
+
+// const nameFirstname = [...scientists].sort((a, b) => a.name[0] > b.name[0] ? 1 : -1);
+// console.log(nameFirstname);
+
+// const years = [...scientists].sort((a, b) => a.born - b.born);
+// console.log(years);
