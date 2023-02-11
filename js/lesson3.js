@@ -155,3 +155,13 @@ const scientists = [
 
 // const years = [...scientists].sort((a, b) => a.born - b.born);
 // console.log(years);
+
+// 4)відсортувати по кількості прожитих років;
+const ageSc = [...scientists].sort((a, b) => (a.dead - a.born) - (b.dead - b.born));
+console.log(ageSc);
+
+// 5)відфільтрувати, хто народився в 15,16,17ст;
+ const bornCent = scientists.filter((scientist) =>
+ scientist.born >= 1400 && scientist.born < 1700)
+ console.log(bornCent);
+ 
