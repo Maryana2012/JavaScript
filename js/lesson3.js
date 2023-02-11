@@ -177,3 +177,15 @@ const scientists = [
 // const work = scientists.every(scientist => scientist.dead >= 1800 && scientist.dead < 1900);
 // console.log(scientists);
 // console.log(work);
+
+// ЗАДАЧА 4
+// Сортування примітивів.
+// Виконати сортування масиву цін зі спадання та зростання.
+const prices = [2, 14, 1, 37, 26, 8];
+// 
+
+const sortedUp = [...prices].sort((a, b) => a - b);
+console.log(sortedUp);
+
+const sortedDown = [...prices].sort((a, b) => b - a);
+console.log(sortedDown);
