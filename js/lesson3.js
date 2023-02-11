@@ -168,5 +168,12 @@ const scientists = [
 
 //  6)знайти рік народження Albert Einstein;
 
-const albert = scientists.find(scientist => scientist.name === "Albert" && scientist.surname === "Einstein")
-console.log(albert);
+// const albert = scientists.find(scientist => scientist.name === "Albert" && scientist.surname === "Einstein")
+// console.log(albert);
+
+// 7)визначити, чи усі вчені працювали у 19ст;
+
+
+// const work = scientists.every(scientist => scientist.dead >= 1800 && scientist.dead < 1900);
+// console.log(scientists);
+// console.log(work);
