@@ -410,6 +410,7 @@
 // const object = { a: 7, b: 6, c: 9 };
 
 
+
 // function newArray(object) {
 //   let array = [];
 // const keys = Object.keys(object);
@@ -425,49 +426,10 @@
 // newArray(object);
 
 
-// --------------------------------------------------------------------------------
-
-
-//17. Напиши скрипт управления личным кабинетом интернет банка
-//Есть объект account в котором необходимо реализовать
-//методы для работы с балансом и историей транзакций
-
-//Типов транзакций всего два.
-//Можно положить либо снять деньги со счета
-// const Transaction = {
-//     DEPOSIT: "deposit",
-//     WITHDRAW: "withdraw",
-//   };
-  
-  //Каждая транзакция это объект со свойствамиЖ id, type, amount
-  
-//   const account = {
-    //текущий баланс счёта
-    // balance: 0,
-  
-    //История транзакций
-    // transactions: [],
-  
-    //Метод создает и возвращает объект транзакций
-    //Принимает сумму и тип транзакций
-    // createTransaction(type, amount) {
-    //   return {
-    //     type,
-    //     amount,
-    //   };
-    // },
-  
-    //Метод отвечающий за добавление суммы к балансу.
-    //Принимает сумму транцакции.
-  
-// account.useTransactions("DEPOSIT", 500);
-// console.log(account.transactions);
-// account.createBalance(600);
-// account.createBalance(250);
 
 
 
-
+    
 
 
 // ------------------------LESSON 3----------------------------------------------------
@@ -629,3 +591,87 @@
 // console.log('newLogin:', clientNew.login = 141414);
 // console.log('email:', clientNew.email);
 // console.log('newEmail:', clientNew.email = 'sobasevska@gmail.com');
+
+// --------------------------------------------------------------------------------
+
+
+//17. Напиши скрипт управления личным кабинетом интернет банка
+//Есть объект account в котором необходимо реализовать
+//методы для работы с балансом и историей транзакций
+
+//Типов транзакций всего два.
+//Можно положить либо снять деньги со счета
+// const Transaction = {
+//     DEPOSIT: "deposit",
+//     WITHDRAW: "withdraw",
+//   };
+  
+  //Каждая транзакция это объект со свойствамиЖ id, type, amount
+  
+//   const account = {
+    //текущий баланс счёта
+    // balance: 0,
+  
+    //История транзакций
+    // transactions: [],
+  
+    //Метод создает и возвращает объект транзакций
+    //Принимает сумму и тип транзакций
+    // createTransaction(type, amount) {
+    //   return {
+    //     type,
+    //     amount,
+    //   };
+    // },
+  
+    //Метод отвечающий за добавление суммы к балансу.
+    //Принимает сумму транцакции.
+
+    
+    const objTransaction = {
+      amount: 0,
+      type: '',
+      id: 1,
+    }
+    
+    
+    const account = {
+      balance: 0,
+      transactions: [],
+      
+      createBalance(amount, type) {
+            
+        if (type === "deposit") {
+          return this.balance += amount;
+          
+       } else if (type === 'withdraw') {
+          return this.balance -= amount;
+          
+       } else return ('Невірна операція');
+    
+  }
+}
+     function createTransaction(type, amount) {
+    
+      const newObj = Object.create(objTransaction);
+            newObj.amount = amount ;
+            newObj.type = type;
+            newObj.id = Date.now();
+       
+      if ((type === "deposit") || (type === "withdraw")) {
+         account.transactions.push(newObj);
+  
+      } else { return console.log('Невірна операція'); }
+  
+  return account;
+
+} 
+ 
+account.createBalance(500, "deposit"); 
+account.createBalance(100, "withdraw"); 
+account.createBalance(1000, "deposit"); 
+    
+createTransaction("deposit", 500); 
+createTransaction("withdraw", 100); 
+createTransaction("deposit", 1000);
+console.log(account);
