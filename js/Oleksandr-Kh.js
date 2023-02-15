@@ -4,29 +4,29 @@
 // capitalize('the quick brown fox')// 'The Quick Brown Fox '
 
 
-                                    // function capitalize(text) {
-                                    // const arrayText = text.split(' ');
-                                    // const newArrayText = [];
+                         // function capitalize(text) {
+                         // const arrayText = text.split(' ');
+                         // const newArrayText = [];
 
-                                    // for (let word of arrayText) {
-                                    //   const arrayWord = word.split('');
-                                    //   const newArrayWord = [];
+                         // for (let word of arrayText) {
+                         //   const arrayWord = word.split('');
+                         //   const newArrayWord = [];
 
-                                    //   for (let i = 0; i < word.length; i += 1) {
-                                    //     if(word[i] === word[0]) {
-                                    //       newArrayWord.push(word[0].toUpperCase())
-                                    //     } else {
-                                    //       newArrayWord.push(word[i])
-                                    //   }
-                                    // }
-                                    // newArrayText.push(newArrayWord.join('')); 
-                                    // } 
-                                    // console.log(newArrayText.join(' '))
-                                    // //  замість console.log має бути return
-                                    // }
+                         //   for (let i = 0; i < word.length; i += 1) {
+                         //     if(word[i] === word[0]) {
+                         //       newArrayWord.push(word[0].toUpperCase())
+                         //     } else {
+                         //       newArrayWord.push(word[i])
+                         //   }
+                         // }
+                         // newArrayText.push(newArrayWord.join('')); 
+                         // } 
+                         // console.log(newArrayText.join(' '))
+                         // //  замість console.log має бути return
+                         // }
 
-                                    // capitalize('the quick brown fox')
-                                    // capitalize('я це зробив, але мені не подобається')
+                         // capitalize('the quick brown fox')
+                         // capitalize('я це зробив, але мені не подобається')
 
 
 
@@ -114,24 +114,24 @@
 //Если объект salaries пуст, то результат должен быть 0
 
 
-                                  // const salaries = {
-                                  //   Ivan: 1000,
-                                  //   Sasha: 5000,
-                                  //   Igor: 3003,
-                                  //   Oleg: 2007,
+                   // const salaries = {
+                   //   Ivan: 1000,
+                   //   Sasha: 5000,
+                   //   Igor: 3003,
+                   //   Oleg: 2007,
                                     
-                                  // };
+                   // };
 
-                                  // const arraySalaries = Object.values(salaries);
-                                  // console.log(arraySalaries)
+                   // const arraySalaries = Object.values(salaries);
+                   // console.log(arraySalaries)
 
-                                  // let sum = 0;
+                   // let sum = 0;
 
-                                  // for (const salary of arraySalaries) {
-                                  //   sum += salary;
-                                  // }
+                   // for (const salary of arraySalaries) {
+                   //   sum += salary;
+                   // }
 
-                                  // console.log(sum);
+                   // console.log(sum);
 
 
 
@@ -173,11 +173,28 @@
 //sum() возвращает сумму сохраненных значений
 //mult() перемножает сохраненные значения и возвращает результат
 
-// const calculator = {
-//   read(a, b) {},
-//   sum() {},
-//   mult() {},
-// };
+
+
+                        // const calculator = {
+                        //   read(a, b) {
+                        //     this.argA = a;
+                        //     this.argB = b;
+                        //     console.log(this)
+                        //   },
+                        //   sum() {
+                        //     total = this.argA + this.argB;
+                        //     console.log(total);
+                        //   },
+                        //   mult() {
+                        //     multiply = this.argA * this.argB;
+                        //     console.log(multiply);
+                        //   },
+                        // };
+
+                        // calculator.read(9, 12);
+                        // calculator.sum();
+                        // calculator.mult();
+
 
 
 //14. Напишите функцию updateObject, которая принимает объект и возвращает
@@ -185,11 +202,31 @@
 //Ожидаемый результат ({a: 1. b: 2}, 'b') => {a: 1}
 
 
+
+// ???????????????????????????????????????????????????????????????
+// const obj1 = {
+//   a: 1,
+//   b: 2
+// };
+// console.log(obj1);
+
+// const arg1 = 'b';
+// console.log(arg1);
+
+// const test = Object.entries(obj1);
+// console.log(test);
+ 
+// function updateObject (obj1) {
+//   const newObj = {
+
+//   }
+  
+// }
+
+
 //15Напишите функцию updateObject, которая принимает объект и возвращает
 //новый объект без указанных параметров
 //Ожидаемый результат ({a: 1, b: 2, c: 3}, 'b', 'a') => {c: 3}
-
-
 
 
 //16. Напишите функцию, которая принимает как параметр объект
