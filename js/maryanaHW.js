@@ -564,7 +564,7 @@
 //     #email;
 //     constructor({ login, email } = {}) {
 //         this.#login = login,
-//         this. #email = email    
+//         this. #email = email
 //     }
 //     get login() {
 //         return this.#login;
@@ -587,7 +587,7 @@
 // })
 
 // console.log(clientNew);
-// console.log('login:', clientNew.login); 
+// console.log('login:', clientNew.login);
 // console.log('newLogin:', clientNew.login = 141414);
 // console.log('email:', clientNew.email);
 // console.log('newEmail:', clientNew.email = 'sobasevska@gmail.com');
@@ -627,51 +627,232 @@
     //Метод отвечающий за добавление суммы к балансу.
     //Принимает сумму транцакции.
 
+// const out = prompt("введіть суму");
+//     const objTransaction = {
+//       amount: 0,
+//       type: '',
+//       id: 1,
+//     }
     
-    const objTransaction = {
-      amount: 0,
-      type: '',
-      id: 1,
-    }
     
-    
-    const account = {
-      balance: 0,
-      transactions: [],
+//     const account = {
+//       balance: 0,
+//       transactions: [],
       
-      createBalance(amount, type) {
+//       createBalance(amount, type) {
             
-        if (type === "deposit") {
-          return this.balance += amount;
+//         if (type === "deposit") {
+//           return this.balance += amount;
           
-       } else if (type === 'withdraw') {
-          return this.balance -= amount;
+//        } else if (type === 'withdraw') {
+//           return this.balance -= amount;
           
-       } else return ('Невірна операція');
+//        } else return ('Невірна операція');
     
-  }
-}
-     function createTransaction(type, amount) {
+//   }
+// }
+//      function createTransaction(type, amount) {
     
-      const newObj = Object.create(objTransaction);
-            newObj.amount = amount ;
-            newObj.type = type;
-            newObj.id = Date.now();
+//       const newObj = Object.create(objTransaction);
+//             newObj.amount = amount ;
+//             newObj.type = type;
+//             newObj.id = Date.now();
        
-      if ((type === "deposit") || (type === "withdraw")) {
-         account.transactions.push(newObj);
+//       if ((type === "deposit") || (type === "withdraw")) {
+//          account.transactions.push(newObj);
   
-      } else { return console.log('Невірна операція'); }
+//       } else { return console.log('Невірна операція'); }
   
-  return account;
+//   return account;
 
-} 
+// }
  
-account.createBalance(500, "deposit"); 
-account.createBalance(100, "withdraw"); 
-account.createBalance(1000, "deposit"); 
+// account.createBalance(500, "deposit");
+// account.createBalance(100, "withdraw");
+// account.createBalance(1000, "deposit");
     
-createTransaction("deposit", 500); 
-createTransaction("withdraw", 100); 
-createTransaction("deposit", 1000);
-console.log(account);
+// createTransaction("deposit", 500);
+// createTransaction("withdraw", 100);
+// createTransaction("deposit", 1000);
+// console.log(account);
+
+// -----------------------------------------------
+// debugger
+// let newNumbers = [];
+// const string = ('-5 8 54 11 7');
+// for (let i = 0; i < string.length; i += 1){
+//   let number = Number.parseInt(string);
+//   newNumbers.push(number);
+//   // number = 0;
+
+//   console.log(number);
+// }
+
+// debugger
+// -----------------------------
+// повернути довжину найкоротшого слова у рядку
+// const string = ("bitcoin take over the world maybe who knows perhaps");
+// const newString = string.split(' ');
+// console.log(newString);
+// let minLengthEl = newString[0];
+
+// for (let i = 0; i < newString.length; i += 1) {
+//   if (newString[i].length < minLengthEl.length) {
+//     minLengthEl = newString[i];
+//     }
+  
+// }
+// const minLength = minLengthEl.length;
+// console.log(minLengthEl);
+// console.log(`довжина найкоротшого слова ${minLength}`);
+
+
+// ----------------------------------------------------------------
+// знайти в рядку найбільше число
+// const string = ('-9 45 85 32 17 0');
+// const newString = string.split(' ');
+// // console.log(newString);
+// let maxNumber = newString[0];
+
+// for (let i = 0; i < newString.length; i += 1){
+//   if (newString[i] > maxNumber) {
+//     maxNumber = newString[i];
+//   }
+// }
+// console.log(maxNumber);
+
+// -----------------------------------------------------------------------
+// Create a function that checks if a number n is divisible by two numbers x AND y.
+//  All inputs are positive, non - zero numbers.
+// debugger
+// function divide(n, x, y) {
+
+//   if ((n % x) === 0 && (n % y) === 0) {
+//     return true;
+//   } else { return false}
+
+//   }
+// console.log(divide(3,1,1));
+
+// -----------------------------------------------------------
+// Повертає кількість (кількість) голосних у заданому рядку.
+// Ми розглядатимемо a, e, i, o, u uяк голосні для цієї ката (але не y).
+// Рядок введення складатиметься лише з малих літер та/або пробілів.
+// debugger
+// function getCount(str) {
+//   let acc = 0;
+//   for (let i = 0; i < str.length; i += 1) {
+//     if (str[i] === "a" || str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u") {
+//       acc += 1;
+//     }
+//   }
+//   return acc;
+// }
+
+// console.log(getCount('o a kak ushakov lil vo kashu kakao'));
+
+// -------------------------------------------------------------
+// Завершіть розв’язання так, щоб воно повертало true, якщо перший переданий аргумент (рядок) закінчувався другим аргументом (також рядком).
+// function solution(str, ending){
+//   const isEnd = str.endsWith(ending);
+//   if (isEnd) {
+//     return true;
+//   } else { return false; }
+
+// }
+// console.log(solution('abcde', 'abc'));
+
+// ------------------------------------------------------------------------
+// Ваша мета в цій ката — реалізувати різницеву функцію, яка віднімає один список з іншого та повертає результат.
+// Він повинен видалити всі значення зі списку a, які присутні в списку, b зберігаючи їх порядок.
+// arrayDiff([1,2],[1]) == [2]
+// debugger
+
+
+// function minus(a, b) {
+//   for (let i = 0; i < a.length; i += 1) {
+//     for (let j = 0; j < b.length; j += 1){
+//       let index = a.indexOf(b[j]);
+//       if (index >= 0) {
+//         newArray = a.splice(index, 1);
+//       }
+      
+//     }
+//   }
+//   return a;
+// }
+// console.log(minus([1,2,3], [1,2]));
+// console.log(minus([1, 2], [1]));
+// console.log(minus([1,2,2], [1]));
+// console.log(minus([1, 2, 3], [1, 2]));
+
+// console.log(minus([1, 2, 3, 2], [2]));
+// console.log(minus([1,2,2], [1]));
+
+// -------------------------------------------------------------------------
+// Ви, мабуть, знаєте систему «лайків» із Facebook та інших сторінок. Люди можуть "лайкати" дописи в блогах, зображення чи інші елементи. Ми хочемо створити текст, який має відображатися поруч із таким елементом.
+
+// Реалізуйте функцію, яка приймає масив, що містить імена людей, яким подобається предмет. Він повинен повертати відображуваний текст, як показано в прикладах:
+
+// []                                -->  "no one likes this"
+// ["Peter"]                         -->  "Peter likes this"
+// ["Jacob", "Alex"]                 -->  "Jacob and Alex like this"
+// ["Max", "John", "Mark"]           -->  "Max, John and Mark like this"
+// ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
+// debugger
+// function likes(array) {
+//   const arrayLength = array.length;
+   
+//     if (arrayLength === 0) {
+//       return ( `no one like this`);
+//     } else if (arrayLength === 1) {
+//       return (`${array[0]} like this`);
+//     } else if (arrayLength === 2) {
+//       return (`${array[0]} and ${array[1]} like this`);
+//     } else if (arrayLength === 3) {
+//       return (`${array[0]}, ${array[1]} and ${array[2]} like this`);
+//     } else if (arrayLength > 3) {
+//       const others = arrayLength - 2;
+//       return (`${array[0]}, ${array[1]} and ${others} others like this`);
+//     }
+//     }
+  
+// console.log(likes([]));
+// console.log(likes(['Peter']));
+// console.log(likes(['Jacob', 'Alex']));
+// console.log(likes(['Max', 'John', 'Mark']));
+// console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']));
+
+
+// ---------------------------------------------------------------------------
+// Ваше завдання — написати функцію maskify, яка змінює всі символи, крім останніх чотирьох, на '#'.
+
+// Приклади
+// "4556364607935616" --> "############5616"
+//      "64607935616" -->      "#######5616"
+//                "1" -->                "1"
+//                 "" -->                 ""
+
+// // "What was the name of your first pet?"
+
+// "Skippy" --> "##ippy"
+
+// "Nananananananananananananananana Batman!"
+// -->
+// "####################################man!"
+// debugger
+// function maskify(cc) {
+//   let newString = '';
+
+//   for (let i = 0; i < cc.length; i += 1){
+//     if ((i !== (cc.length - 1)) && (i !== (cc.length - 2)) && (i !== (cc.length - 3)) && (i !== (cc.length - 4))) {
+//       // newString = cc.replace(cc[i], '#');
+//       newString += '#'; 
+//     } else { newString += cc[i]; }
+//   }
+//   return newString;
+// }
+// console.log(maskify('4556364607935616')); 
+// console.log(maskify('1')); 
+// console.log(maskify('11111')); 
+// console.log(maskify('4fvavd')); 
