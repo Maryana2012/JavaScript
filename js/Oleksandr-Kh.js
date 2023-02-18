@@ -1,34 +1,36 @@
+// "use strict"
+
+//-------------------HOME WORK 2 --------------------//
+
 // ЗАДАЧА 8
 // Напишіть ф-цію capitalize , яка буде приймати рядок і буде 
 // повертати новий рядок , де кожне слово буде з великої букви
 // capitalize('the quick brown fox')// 'The Quick Brown Fox '
 
 
-                         // function capitalize(text) {
-                         // const arrayText = text.split(' ');
-                         // const newArrayText = [];
+             // function capitalize(text) {
+             // const arrayText = text.split(' ');
+             // const newArrayText = [];
 
-                         // for (let word of arrayText) {
-                         //   const arrayWord = word.split('');
-                         //   const newArrayWord = [];
+             // for (let word of arrayText) {
+             //   const arrayWord = word.split('');
+             //   const newArrayWord = [];
 
-                         //   for (let i = 0; i < word.length; i += 1) {
-                         //     if(word[i] === word[0]) {
-                         //       newArrayWord.push(word[0].toUpperCase())
-                         //     } else {
-                         //       newArrayWord.push(word[i])
-                         //   }
-                         // }
-                         // newArrayText.push(newArrayWord.join('')); 
-                         // } 
-                         // console.log(newArrayText.join(' '))
-                         // //  замість console.log має бути return
-                         // }
+             //   for (let i = 0; i < word.length; i += 1) {
+             //     if(word[i] === word[0]) {
+             //       newArrayWord.push(word[0].toUpperCase())
+             //     } else {
+             //       newArrayWord.push(word[i])
+             //   }
+             // }
+             // newArrayText.push(newArrayWord.join('')); 
+             // } 
+             // console.log(newArrayText.join(' '))
+             // //  замість console.log має бути return
+             // }
 
-                         // capitalize('the quick brown fox')
-                         // capitalize('я це зробив, але мені не подобається')
-
-
+             // capitalize('the quick brown fox')
+             // capitalize('я це зробив, але мені не подобається')
 
 
 // ЗАДАЧА 9
@@ -39,46 +41,42 @@
 // updateCourse(oldName, newName)- змінює імя на нове
 
 
-                      // const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
+             // const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
 
-                      // function addCourse(name) {
-                      //   if(courses.includes(name)) {
-                      //     console.log('У вас уже є такий курс')
-                      //     } else {
-                      //       courses.push(name)
-                      //       console.log(courses)
-                      //       }
-                      // }
-                      // function removeCourse(name) {
-                      //     if(courses.includes(name)) {
-                      //       for (let i = 0; i < courses.length; i += 1) {
-                      //         if(courses[i] === name) {
-                      //           courses.splice(i, 1);
-                      //           console.log(courses)
-                      //         }}}
-                      //     else {
-                      //       console.log('Курс з таким іменем не знайдено')
-                      //       }
-                      // }
-                      // function updateCourse(oldName, newName) {
-                      //     for (let i = 0; i < courses.length; i += 1) {
-                      //       if(courses[i] === oldName) {
-                      //         courses.splice(i, 1, newName);
-                      //         console.log(courses)
-                      //       }}
-                      //       console.log(courses)
-                      // }
+             // function addCourse(name) {
+             //   if(courses.includes(name)) {
+             //     console.log('У вас уже є такий курс')
+             //     } else {
+             //       courses.push(name)
+             //       console.log(courses)
+             //       }
+             // }
+             // function removeCourse(name) {
+             //     if(courses.includes(name)) {
+             //       for (let i = 0; i < courses.length; i += 1) {
+             //         if(courses[i] === name) {
+             //           courses.splice(i, 1);
+             //           console.log(courses)
+             //         }}}
+             //     else {
+             //       console.log('Курс з таким іменем не знайдено')
+             //       }
+             // }
+             // function updateCourse(oldName, newName) {
+             //     for (let i = 0; i < courses.length; i += 1) {
+             //       if(courses[i] === oldName) {
+             //         courses.splice(i, 1, newName);
+             //         console.log(courses)
+             //       }}
+             //       console.log(courses)
+             // }
   
-
-
-// addCourse("Express"); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
-// addCourse("CSS"); // 'У вас уже є такий курс'
-// removeCourse("React"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
-// removeCourse("Vue"); // 'Курс з таким іменем не найдено'
-// updateCourse("Express", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
-// console.log(courses)
-
-
+             // addCourse("CSS"); // 'У вас уже є такий курс'
+             // removeCourse("React"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+             // removeCourse("Vue"); // 'Курс з таким іменем не найдено'
+             // addCourse("Express"); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+             // updateCourse("Express", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+             // console.log(courses)
 
 
 //10. Напиши скрипт, который для объекта user,
@@ -89,22 +87,20 @@
 //4 выводит содержимое объекта users в фортмате
 //ключ:значение используя Object.keys() и for...of
 
-                                          // ?????????????
 
-                                          // const user = {
-                                          //   hobby: "xyz",
-                                          //   premium: true,
-                                          // };
+             // ?????????????
 
-
-                                          // user.mood = 'happy';
-                                          // user.hobby = 'skydiving';
-                                          // user.premium = false;
-
-                                          // console.log(user)
+             // const user = {
+             //   hobby: "xyz",
+             //   premium: true,
+             // };
 
 
+             // user.mood = 'happy';
+             // user.hobby = 'skydiving';
+             // user.premium = false;
 
+             // console.log(user)
 
 
 //11. У нас есть объект, в котором храняться зарплаты
@@ -114,26 +110,24 @@
 //Если объект salaries пуст, то результат должен быть 0
 
 
-                   // const salaries = {
-                   //   Ivan: 1000,
-                   //   Sasha: 5000,
-                   //   Igor: 3003,
-                   //   Oleg: 2007,
+             // const salaries = {
+             //   Ivan: 1000,
+             //   Sasha: 5000,
+             //   Igor: 3003,
+             //   Oleg: 2007,
                                     
-                   // };
+             // };
 
-                   // const arraySalaries = Object.values(salaries);
-                   // console.log(arraySalaries)
+             // const arraySalaries = Object.values(salaries);
+             // console.log(arraySalaries)
 
-                   // let sum = 0;
+             // let sum = 0;
 
-                   // for (const salary of arraySalaries) {
-                   //   sum += salary;
-                   // }
+             // for (const salary of arraySalaries) {
+             //   sum += salary;
+             // }
 
-                   // console.log(sum);
-
-
+             // console.log(sum);
 
 
 //12. Напишите ф-цию calcTotalPrice(stones, stonesName),
@@ -142,29 +136,29 @@
 //Функция считает и возвращает общую стоимость камней
 //с таким именем, ценой и количеством из объекта
 
-			  // const stones = [
-                          //   {name: 'stone4', price: 20, quantity: 3},
-                          //   {name: 'stone2', price: 7, quantity: 5},
-                          //   {name: 'stone1', price: 5, quantity: 9},
-                          //   {name: 'stone3', price: 13, quantity: 2}
-                          // ];
-                          // console.log(stones);
 
-                          // const stonesName = 'stone1';
+			 // const stones = [
+             //   {name: 'stone4', price: 20, quantity: 3},
+             //   {name: 'stone2', price: 7, quantity: 5},
+             //   {name: 'stone1', price: 5, quantity: 9},
+             //   {name: 'stone3', price: 13, quantity: 2}
+             // ];
+             // console.log(stones);
 
-                          // let totalPrice = 0;
+             // const stonesName = 'stone1';
 
-                          // function calcTotalPrice(stones, stonesName) {
-                          //   for (let stone of stones) {
-                          //     if(stone.name === stonesName){
-                          //       totalPrice = stone.price * stone.quantity;
-                          //       console.log(totalPrice);
-                          //     }
-                          //   }
-                          // }
+             // let totalPrice = 0;
 
-                          // calcTotalPrice(stones, stonesName);
+             // function calcTotalPrice(stones, stonesName) {
+             //   for (let stone of stones) {
+             //     if(stone.name === stonesName){
+             //       totalPrice = stone.price * stone.quantity;
+             //       console.log(totalPrice);
+             //     }
+             //   }
+             // }
 
+             // calcTotalPrice(stones, stonesName);
 
 
 //13. Создайте объект calculator с тремя методами
@@ -174,27 +168,25 @@
 //mult() перемножает сохраненные значения и возвращает результат
 
 
+             // const calculator = {
+             //   read(a, b) {
+             //     this.argA = a;
+             //     this.argB = b;
+             //     console.log(this)
+             //   },
+             //   sum() {
+             //     total = this.argA + this.argB;
+             //     console.log(total);
+             //   },
+             //   mult() {
+             //     multiply = this.argA * this.argB;
+             //     console.log(multiply);
+             //   },
+             // };
 
-                        // const calculator = {
-                        //   read(a, b) {
-                        //     this.argA = a;
-                        //     this.argB = b;
-                        //     console.log(this)
-                        //   },
-                        //   sum() {
-                        //     total = this.argA + this.argB;
-                        //     console.log(total);
-                        //   },
-                        //   mult() {
-                        //     multiply = this.argA * this.argB;
-                        //     console.log(multiply);
-                        //   },
-                        // };
-
-                        // calculator.read(9, 12);
-                        // calculator.sum();
-                        // calculator.mult();
-
+             // calculator.read(9, 12);
+             // calculator.sum();
+             // calculator.mult();
 
 
 //14. Напишите функцию updateObject, которая принимает объект и возвращает
@@ -202,37 +194,41 @@
 //Ожидаемый результат ({a: 1. b: 2}, 'b') => {a: 1}
 
 
+             // ???????????????????????????????????????????????????????????????
+             // const obj1 = {
+             //   a: 1,
+             //   b: 2
+             // };
+             // console.log(obj1);
 
-// ???????????????????????????????????????????????????????????????
-// const obj1 = {
-//   a: 1,
-//   b: 2
-// };
-// console.log(obj1);
+             // const arg1 = 'b';
+             // console.log(arg1);
 
-// const arg1 = 'b';
-// console.log(arg1);
-
-// const test = Object.entries(obj1);
-// console.log(test);
- 
-// function updateObject (obj1) {
-//   const newObj = {
-
-//   }
-  
-// }
+             // const test = Object.entries(obj1);
+             // console.log(test);
+            
+             // function updateObject (obj1) {
+             //   const newObj = {
+             //   }
+             // }
 
 
 //15Напишите функцию updateObject, которая принимает объект и возвращает
 //новый объект без указанных параметров
 //Ожидаемый результат ({a: 1, b: 2, c: 3}, 'b', 'a') => {c: 3}
-
+// ????????????????????????????????????????????????????????????????????????
 
 //16. Напишите функцию, которая принимает как параметр объект
 //и формирует объекты в новом массиве в формате [key, value]
 
+             // const phones = {phone1: 'iphone', phone2: 'Sumsung', phone3: 'LG'};
 
+             // function myFunction(obj) {
+             //   const array = Object.entries(obj);
+             //   console.log(array);
+             // }
+
+             // myFunction(phones);
 
 //17. Напиши скрипт управления личным кабинетом интернет банка
 //Есть объект account в котором необходимо реализовать
@@ -245,23 +241,193 @@
 //     WITHDRAW: "withdraw",
 //   };
   
-  //Каждая транзакция это объект со свойствами: id, type, amount
+//   //Каждая транзакция это объект со свойствами: id, type, amount
   
 //   const account = {
-    //текущий баланс счёта
-    // balance: 0,
+//        balance: 0,
+//     transactions: [],
   
-    //История транзакций
-    // transactions: [],
-  
-    //Метод создает и возвращает объект транзакций
-    //Принимает сумму и тип транзакций
-    // createTransaction(type, amount) {
-    //   return {
-    //     type,
-    //     amount,
-    //   };
-    // },
+//     //Метод создает и возвращает объект транзакций
+//     addTransaction(id, type, amount){
+//       const transaction = {
+//           type, 
+//           amount,
+//           id: Date.now()
+//         }
+//       }
+//     }
+//     //Принимает сумму и тип транзакций
+//     createTransaction(type, amount) {
+//       return {
+//         type,
+//         amount,
+//       };
+//     }
   
     //Метод отвечающий за добавление суммы к балансу.
     //Принимает сумму транцакции.
+
+
+    //-------------------HOME WORK 1 --------------------//
+
+// ЗАДАЧА 10 
+// НАПИШІТЬ ПРОГРАМУ, ЯКА БУДЕ ВИЗНАЧАТИ ДОВЖИНУ ІМЕНІ , 
+// ЯКЩО ІМЯ БІЛЬШЕ 7 СИМВОЛІВ, КОНСОЛЬ ВИВОДИТЬ 
+// "Wow, you  have a REALLY long name!" , ЯКЩО МЕНШЕ 7 
+// "Your name isn't very long"
+
+
+             // function longName(name) {
+             //   if (name.length > 7){
+             //     console.log("Wow, you  have a REALLY long name!");
+             //   } else {
+             //     console.log("Your name isn't very long");
+             //     }
+             // }
+
+             // longName('Oleksandr');
+             // longName('Igor');
+             // longName('Kateryna');
+
+
+// ЗАДАЧА 11
+// Используя функцию if...else,
+//напишите код, который будет спрашивать:
+//"Какое официальное название JavaScript?"
+//Если пользователь вводит "ECMAScript",
+//то показать через alert: "Верно!"
+//в противном случае отобразить:"Не знаете? ECMAScript!"
+
+
+             // const nameJavaScript = prompt("Яка офіційна назва JavaScript?");
+             // if(nameJavaScript === "ECMAScript") {
+             //   alert("Вірно!");
+             // } else {
+             //   alert("Не знаєте? ECMAScript!")
+             // }
+
+
+// ЗАДАЧА 12
+// Напишите программу, которая получит от пользователя
+//число (количество минут) и выведет в консоль
+//строку в формате часов и минут
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
+// 70 === 01:10
+
+
+             // const numberMinutes = Number(prompt('Введіть кількість хвилин'));
+             // console.log(numberMinutes);
+             // let hours = (Number.parseInt(numberMinutes / 60));
+             // console.log(hours);
+             // let minutes = (numberMinutes % 60);
+             // console.log(minutes);
+             // const message = `${hours}:${minutes}`
+             // console.log(message);
+
+// -----------------------------------------------------------як правильно вирішити 12 задачу?????
+
+// ЗАДАЧА 13
+//При помощи цикла for додайте все четные числа от   min до max
+
+
+             // const numberMin = 4;
+             // const numberMax = 15;
+             // let total = 0;
+             // for (let i = numberMin; i <= numberMax; i += 1){
+             //     if (i % 2 === 0) {
+             //       total += i;
+             //       console.log("+:", i);
+             //     }
+             //     console.log("total", total);
+             // }
+
+
+// ЗАДАЧА 14
+// Напишите код, который будет спрашивать
+//логин с помощью prompt и логировать результат
+//в консоль браузера
+
+//Если посетитель вводит "Админ",
+//то prompt запрашивает пароль.
+//Если ничего не ввели или нажата клавиша Esc
+//вывести строку "Отменено"
+//В противном случае вывести строку "Я вас не знаю"
+
+//Пароль проверять так:
+//Если введён пароль "Я главный",
+//то вывести строку "Здравствуйте!"
+//иначе выводить строку "Неверный пароль!"
+
+
+// ЗАДАЧА 15
+// При загрузке страницы пользователю предлагается
+//в prompt ввести число. Ввод добавляется к значению
+//переменной total.
+//Операция ввода числа продолжается до тех пор,
+//пока пользователь не нажмет кнопку Cancel в prompt.
+//После того как пользователь прекратил ввод нажав на
+//кнопку Cancel, показать alert со строкой 
+// "Общая сумма введенных чисел равна [число]."
+//Делать проверку,что пользователь ввел именно число,
+//а не произвольный набор символов, не нужно.
+
+
+             // let total = 0;
+
+             // do {let number = prompt("Введіть число");
+             //     console.log(number);
+             //     total += number;
+             //     console.log(total);
+
+             //   } while (prompt().number !== null);
+                        
+             //   console.log(`Загальна сума введених чисел дорівнює [${total}]`);
+
+
+// ЗАДАЧА 16
+//  В переменной min лежит число от 0 до 59.
+// Определите в какую четверть часа попадает
+// это число(в первую, вторую, третью или четвертую).
+
+
+             // const min = prompt("Введіть число від 0 до 59 включно");
+
+             // if (min >= 0 && min < 15) {
+             //   console.log("Перша чверть години");
+             // } else if (min >= 15 && min < 30) {
+             //   console.log("Друга чверть години");
+             // } else if (min >= 30 && min < 45) {
+             //   console.log("Третя чверть години");
+             // } else if (min >= 45 && min <= 59) {
+             //   console.log("Четверта чверть години");
+             // } else {
+             //   console.log("Некоректно введено число");
+             // }
+
+
+// ЗАДАЧА 17
+
+//  В переменной min лежит число от 0 до 59.
+// Определите в какую четверть часа попадает
+// это число(в первую, вторую, третью или четвертую).
+
+
+// ЗАДАЧА 18
+
+// Дана строка, состоящая из символов, например, 'abcde'.
+// Проверьте, что первым символом этой строки является буква 'a'.
+// Если это так - выведите 'да', в противном случае выведите 'нет'.
+
+
+             // const string = 'abcde';
+             // const array = string.split("");
+             // console.log(array);
+
+             // for (let el of array){
+
+             // if (el === "a") {
+             //   console.log('Yes');
+             //   break
+             // }   
+             // console.log('No');
+             // } 
