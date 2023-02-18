@@ -627,54 +627,54 @@
     //Метод отвечающий за добавление суммы к балансу.
     //Принимает сумму транцакции.
 
-// const out = prompt("введіть суму");
-//     const objTransaction = {
-//       amount: 0,
-//       type: '',
-//       id: 1,
-//     }
-    
-    
-//     const account = {
-//       balance: 0,
-//       transactions: [],
-      
-//       createBalance(amount, type) {
-            
-//         if (type === "deposit") {
-//           return this.balance += amount;
-          
-//        } else if (type === 'withdraw') {
-//           return this.balance -= amount;
-          
-//        } else return ('Невірна операція');
-    
-//   }
-// }
-//      function createTransaction(type, amount) {
-    
-//       const newObj = Object.create(objTransaction);
-//             newObj.amount = amount ;
-//             newObj.type = type;
-//             newObj.id = Date.now();
-       
-//       if ((type === "deposit") || (type === "withdraw")) {
-//          account.transactions.push(newObj);
-  
-//       } else { return console.log('Невірна операція'); }
-  
-//   return account;
 
-// }
- 
-// account.createBalance(500, "deposit");
-// account.createBalance(100, "withdraw");
-// account.createBalance(1000, "deposit");
+    const objTransaction = {
+      amount: 0,
+      type: '',
+      id: 1,
+    }
     
-// createTransaction("deposit", 500);
-// createTransaction("withdraw", 100);
-// createTransaction("deposit", 1000);
-// console.log(account);
+    
+    const account = {
+      balance: 0,
+      transactions: [],
+      
+      createBalance(amount, type) {
+            
+        if (type === "deposit") {
+          return this.balance += amount;
+          
+       } else if (type === 'withdraw') {
+          return this.balance -= amount;
+          
+       } else return ('Невірна операція');
+    
+  }
+}
+     function createTransaction(type, amount) {
+    
+      const newObj = Object.create(objTransaction);
+            newObj.amount = amount ;
+            newObj.type = type;
+            newObj.id = Date.now();
+       
+      if ((type === "deposit") || (type === "withdraw")) {
+         account.transactions.push(newObj);
+  
+      } else { return console.log('Невірна операція'); }
+  
+  return account;
+
+}
+ 
+account.createBalance(500, "deposit");
+account.createBalance(100, "withdraw");
+account.createBalance(1000, "deposit");
+    
+createTransaction("deposit", 500);
+createTransaction("withdraw", 100);
+createTransaction("deposit", 1000);
+console.log(account);
 
 // -----------------------------------------------
 // debugger
@@ -826,20 +826,17 @@
 
 // ---------------------------------------------------------------------------
 // Ваше завдання — написати функцію maskify, яка змінює всі символи, крім останніх чотирьох, на '#'.
-
 // Приклади
 // "4556364607935616" --> "############5616"
 //      "64607935616" -->      "#######5616"
 //                "1" -->                "1"
 //                 "" -->                 ""
-
 // // "What was the name of your first pet?"
-
 // "Skippy" --> "##ippy"
-
 // "Nananananananananananananananana Batman!"
 // -->
 // "####################################man!"
+
 // debugger
 // function maskify(cc) {
 //   let newString = '';
@@ -847,12 +844,118 @@
 //   for (let i = 0; i < cc.length; i += 1){
 //     if ((i !== (cc.length - 1)) && (i !== (cc.length - 2)) && (i !== (cc.length - 3)) && (i !== (cc.length - 4))) {
 //       // newString = cc.replace(cc[i], '#');
-//       newString += '#'; 
+//       newString += '#';
 //     } else { newString += cc[i]; }
 //   }
 //   return newString;
 // }
-// console.log(maskify('4556364607935616')); 
-// console.log(maskify('1')); 
-// console.log(maskify('11111')); 
-// console.log(maskify('4fvavd')); 
+// console.log(maskify('4556364607935616'));
+// console.log(maskify('1'));
+// console.log(maskify('11111'));
+// console.log(maskify('4fvavd'));
+
+// ---------------------------------------------------------------------------
+// Крокетний клуб Western Suburbs має дві категорії членства: старше та відкрите. Їм потрібна ваша допомога з аплікаційною формою, у якій потенційним членам буде вказано, до якої категорії вони будуть призначені.
+// Щоб бути старшим, член повинен бути не менше 55 років і мати гандикап більше 7. У цьому крокетному клубі гандикап коливається від -2 до +26; чим кращий гравець, тим нижчий гандикап.
+// Введення
+// Вхідні дані складатимуться зі списку пар. Кожна пара містить інформацію про одного потенційного члена. Інформація складається з цілого числа для віку людини та цілого числа для вади людини.
+// Вихід
+// Вихідні дані складатимуться зі списку рядкових значень (у Haskell та C: Openабо Senior), які вказуватимуть, чи слід помістити відповідного члена у старшу чи відкриту категорію.
+// приклад
+// input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
+// output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
+
+// debugger
+// function openOrSenior(data) {
+//   const status = [];
+//   let subArray = [];
+//   for (let i = 0; i < data.length; i += 1){
+//     subArray = data[i];
+//     if ((subArray[0] >= 55) && (subArray[1] > 7)) {
+//       status.push('Senior');
+//     } else {status.push('Open');}
+//     // console.log(subArray);
+//     // console.log(data[i]);
+//   }
+//   return status;
+// }
+// console.log(openOrSenior([[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]));
+// -----------------------------------------------------------------------------------
+// Створіть програму, яка фільтрує список рядків і повертає список лише з іменем ваших друзів.
+// Якщо в імені рівно 4 літери, будьте впевнені, це має бути ваш друг! В іншому випадку ви можете бути впевнені, що він не...
+// Приклад: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
+// тобто
+// friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
+// Примітка: збережіть оригінальний порядок імен у виводі.
+// debugger
+// function friend(friends){
+//   const itIsFriend = [];
+//   for (let i = 0; i < friends.length; i += 1) {
+//     let number = Number(friends[i]);
+    
+//       if (Number.isNaN(number)) {
+//       if ((friends[i].length === 4) && (typeof (friends[i]) === 'string')) {
+
+//         itIsFriend.push(friends[i])
+//       }
+//     }
+//   }
+//   return itIsFriend;
+// }
+// console.log(friend(["Ryan", "Kieran", "Mark"]));
+// console.log(friend(["Ryan", "Jimmy", "123", "4", "Cool Man"]));
+// console.log(friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"]));
+// console.log(friend(['Hell', 'Is', 'a', 'badd', 'word']));
+// ------------------------------------------------------------------------------------------
+// Перемістіть першу літеру кожного слова в кінець, а потім додайте «ай» у кінці слова. Залиште розділові знаки без змін.
+// Приклади
+// pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
+// pigIt('Hello world !');     // elloHay orldway !
+// debugger
+
+// function pigIt(str) {
+  
+//   let ayWord = '';
+//   let ayString = '';
+//   const newString = str.split(' ');
+//   for (let i = 0; i < newString.length; i += 1) {
+//     if (newString[i] === [a - zA - Z]) {
+//       let word = newString[i];
+
+//       let firstLetter = word + word[0];
+//       let newWord = firstLetter.slice(1, firstLetter.length);
+//       ayWord = newWord + "ay";
+//       ayString += ayWord + ' ';
+//       ayString.trim();
+//     }
+//   }
+//   // const lastString = ayString.slice(0, ayString.length -1)
+
+//   return ayString;
+// }
+// console.log(pigIt('Hello world !'));
+// console.log(pigIt('Pig latin is cool'));
+// debugger
+// function pigIt(str) { 
+//   const newStr = str.split(' ');
+//   let newWord = '';
+//   let newArray = [];
+//   let ayWord = [];
+// //  console.log(newStr);
+//   for (let i = 0; i < newStr.length; i += 1){
+//     newArray = [...newStr[i]];
+//     // lastEl =
+//       newArray.push(newArray[0]) 
+//     // firstEl =
+//       newArray.splice(0, 1);
+//     ayWord = newArray + 'ay';
+//     newWord += ayWord;
+//     // lastWord = ayWord.join(',');
+//     // for (let i = 0; i < newArray.length; i += 1){
+//     //   let 
+//     // }
+   
+//   }
+//   return   newWord;
+// }
+// console.log(pigIt('Hello world'));
