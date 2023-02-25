@@ -628,53 +628,53 @@
     //Принимает сумму транцакции.
 
 
-    const objTransaction = {
-      amount: 0,
-      type: '',
-      id: 1,
-    }
+//     const objTransaction = {
+//       amount: 0,
+//       type: '',
+//       id: 1,
+//     }
     
     
-    const account = {
-      balance: 0,
-      transactions: [],
+//     const account = {
+//       balance: 0,
+//       transactions: [],
       
-      createBalance(amount, type) {
+//       createBalance(amount, type) {
             
-        if (type === "deposit") {
-          return this.balance += amount;
+//         if (type === "deposit") {
+//           return this.balance += amount;
           
-       } else if (type === 'withdraw') {
-          return this.balance -= amount;
+//        } else if (type === 'withdraw') {
+//           return this.balance -= amount;
           
-       } else return ('Невірна операція');
+//        } else return ('Невірна операція');
     
-  }
-}
-     function createTransaction(type, amount) {
+//   }
+// }
+//      function createTransaction(type, amount) {
     
-      const newObj = Object.create(objTransaction);
-            newObj.amount = amount ;
-            newObj.type = type;
-            newObj.id = Date.now();
+//       const newObj = Object.create(objTransaction);
+//             newObj.amount = amount ;
+//             newObj.type = type;
+//             newObj.id = Date.now();
        
-      if ((type === "deposit") || (type === "withdraw")) {
-         account.transactions.push(newObj);
+//       if ((type === "deposit") || (type === "withdraw")) {
+//          account.transactions.push(newObj);
   
-      } else { return console.log('Невірна операція'); }
+//       } else { return console.log('Невірна операція'); }
   
-  return account;
+//   return account;
 
-}
+// }
  
-account.createBalance(500, "deposit");
-account.createBalance(100, "withdraw");
-account.createBalance(1000, "deposit");
+// account.createBalance(500, "deposit");
+// account.createBalance(100, "withdraw");
+// account.createBalance(1000, "deposit");
     
-createTransaction("deposit", 500);
-createTransaction("withdraw", 100);
-createTransaction("deposit", 1000);
-console.log(account);
+// createTransaction("deposit", 500);
+// createTransaction("withdraw", 100);
+// createTransaction("deposit", 1000);
+// console.log(account);
 
 // -----------------------------------------------
 // debugger
