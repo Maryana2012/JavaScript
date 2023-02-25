@@ -46,6 +46,7 @@ const refs = {
   totalEl: document.querySelector('.total'),
   formEl:document.querySelector('.form'),
   amountEl: document.querySelector('.amount'),
+  containerEl: document.querySelector(".container")
 
 }
 // console.log(refs);
@@ -60,7 +61,7 @@ refs.totalEl.textContent = totalPrice;
 refs.amountEl.textContent = quantity;
 
 }
-calc();
+// calc();
 window.addEventListener('DOMContentLoaded', calc);
 // refs.formEl.addEventListener('input', calc);
 
@@ -68,3 +69,22 @@ window.addEventListener('DOMContentLoaded', calc);
 // 2.2 ПЕРЕПИШІТЬ КОД , ЩОБ ЗНАЧЕННЯ МИ ОТРИМУВАЛИ ПО КЛІЦІ НА КНОПКУ , ПРИ НАЖАТТІ ЯКОГО БУДЕ ВАМ РАХУВАТИ ТА ВИВОДИТИ РЕЗУЛЬТАТ НА ЕКРАН    <button class="btn">Calculate</button>
 
 refs.formEl.addEventListener("submit", calc)
+
+function handleBtnClick() {
+  const price = refs.priceEl.value;
+  const quantity = refs.quantityEl.value;
+  refs.amountEl.textContent = quantity;
+}
+
+refs.quantityEl.addEventListener('input', handleBtnClick)
+
+// 2.3 НАПИШІТЬ  РАНДОМНИЙ КОЛІР ДЛЯ НАШОЇ ФОРМИ КОЛЬКУЛЯТОРА ЗА ДОПОМОГОЮ ІНЛАЙНОВОГО СТИЛЮ
+
+const randomRgbColor = () => {
+  const r = Math.round(Math.random() * (255 - 1) + 1);
+  const g = Math.round(Math.random() * (255 - 1) + 1);
+  const b = Math.round(Math.random() * (255 - 1) + 1);
+  return `rgb(${r},${g},${b})`;
+};
+
+refs.containerEl.style.backgroundColor = randomRgbColor();
