@@ -50,7 +50,9 @@ const refs = {
 }
 // console.log(refs);
 
-function calc() {
+function calc(e) {
+  e.preventDefault();
+  
   const price = refs.priceEl.value;
   const quantity = refs.quantityEl.value;
  const totalPrice = price * quantity;
@@ -60,4 +62,9 @@ refs.amountEl.textContent = quantity;
 }
 calc();
 window.addEventListener('DOMContentLoaded', calc);
-refs.formEl.addEventListener('input', calc);
+// refs.formEl.addEventListener('input', calc);
+
+
+// 2.2 ПЕРЕПИШІТЬ КОД , ЩОБ ЗНАЧЕННЯ МИ ОТРИМУВАЛИ ПО КЛІЦІ НА КНОПКУ , ПРИ НАЖАТТІ ЯКОГО БУДЕ ВАМ РАХУВАТИ ТА ВИВОДИТИ РЕЗУЛЬТАТ НА ЕКРАН    <button class="btn">Calculate</button>
+
+refs.formEl.addEventListener("submit", calc)
