@@ -1,4 +1,89 @@
 "use strict"
+//-------------------HOME WORK 4 --------------------//
+
+// ЗАДАЧА
+// ПОТРІБНО СТВОРИТИ Ф-ЦІЮ , ЯКА БУДЕ ШУКАТИ НАРЦИСА.
+// ГОЛОВНА УМОВА НАРЦИСА ЗНАЮТЬ УСІ , НАРЦИС НЕ ЗНАЄ НІКОГО
+// є елемент масиву , який незнає нікого
+// якщо не одна така людина , то вертаємо not found
+// якщо один , то перевірити , чи його знають усі люди, 
+// якщо так то вертаємо found
+
+// const people1 = [{
+//   name: 'Alex',
+//   know: ["Eva", "Jhon"],
+// },
+// {
+//   name: 'Ivan',
+//   know: ["Jhon", "Alex"],
+// },
+// {
+//   name: 'Eva',
+//   know: ["Alex", "Jhon"],
+// },
+// {
+//   name: 'Jhon',
+//   know: [],
+// }]
+
+
+// const people2 = [{
+//   name: 'Alex',
+//   know: ["Eva", "Jhon"],
+// },
+// {
+//   name: 'Jhon',
+//   know: ["Eva"],
+// },
+// {
+//   name: 'Eva',
+//   know: [],
+// },
+// {
+//   name: 'Ivan',
+//   know: ["Jhon", "Alex"],
+// }]
+
+
+// const people3 = [{
+//   name: 'Alex',
+//   know: ["Eva", "Jhon"],
+// },
+// {
+//   name: 'Jhon',
+//   know: [],
+// },
+// {
+//   name: 'Eva',
+//   know: ["Alex", "Jhon"],
+// },
+// {
+//   name: 'Ivan',
+//   know: ["Jhon", "Alex"],
+// }]
+// //  знаходжу людину без друзів (масив з об'єктом)
+// const maybeNarcys = people3.filter(person => person.know.length === 0);
+// //  знаходжу людей з друзями (масив з об'єктом)
+// const isNotNarcys = people3.filter(person => person.know.length !== 0);
+// // якщо не одна така людина , то вертаємо (повідомлення) not found
+// // якщо ні то вертаємо (повідомлення) found
+// function message(array, fun) {
+//         if(maybeNarcys.length > 1){
+//         console.log(maybeNarcys.length)
+//         console.log('not found')
+//         } else {
+//         console.log('found')
+// }}
+// message(people3, maybeNarcys)
+// // перевіряю, чи його знають усі люди
+
+
+// console.log(maybeNarcys)
+// console.log(isNotNarcys)
+// console.log(...maybeNarcys.values())
+// console.log(...isNotNarcys.values())
+
+
 //-------------------HOME WORK 3 --------------------//
 
 // ЗАДАЧА 1
