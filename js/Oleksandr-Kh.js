@@ -24,6 +24,10 @@
 // {
 //   name: 'Jhon',
 //   know: [],
+// },
+// {
+//   name: 'Ivan',
+//   know: ["Alex", "Jhon"],
 // }]
 
 
@@ -61,27 +65,23 @@
 //   name: 'Ivan',
 //   know: ["Jhon", "Alex"],
 // }]
-// //  знаходжу людину без друзів (масив з об'єктом)
-// const maybeNarcys = people3.filter(person => person.know.length === 0);
-// //  знаходжу людей з друзями (масив з об'єктом)
-// const isNotNarcys = people3.filter(person => person.know.length !== 0);
-// // якщо не одна така людина , то вертаємо (повідомлення) not found
-// // якщо ні то вертаємо (повідомлення) found
-// function message(array, fun) {
-//         if(maybeNarcys.length > 1){
-//         console.log(maybeNarcys.length)
-//         console.log('not found')
-//         } else {
-//         console.log('found')
-// }}
-// message(people3, maybeNarcys)
-// // перевіряю, чи його знають усі люди
 
+// //  знаходжу людину без друзів та зберігаю його ім'я (рядок)
 
-// console.log(maybeNarcys)
-// console.log(isNotNarcys)
-// console.log(...maybeNarcys.values())
-// console.log(...isNotNarcys.values())
+// let maybeNarcysName = "";
+// const maybeNarcys = people1.filter((person) => {
+//         if(person.know.length === 0){
+//                maybeNarcysName = person.name
+//         }});
+// console.log(maybeNarcysName);
+    
+// //  знаходжу людей з друзями (масив з об'єктами),
+// // перевіряю, чи є в них потенційний нарцис в друзях
+// // та виводжу повідомлення
+
+// const narcys = people1
+// .filter(person => person.know.length !== 0)
+// .every((element) => element.know.includes(maybeNarcysName)) ? console.log(`found`) : console.log(`not found`); 
 
 
 //-------------------HOME WORK 3 --------------------//
