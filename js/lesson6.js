@@ -8,15 +8,15 @@
 // const divEl = document.querySelector(".box");
 
 // fetch(`${URl}?key=${KEY}&color=gray&category=nature`)
-//     .then((result) => 
+//     .then((result) =>
 //         result.json())
 //     .then(data =>
 //         render(data.hits)
 //     )
-//     .catch(err => console.log(err))    
+//     .catch(err => console.log(err))
 
 // function markupImg(card) {
-      
+
 //     const imgEl = document.createElement("img");
 //     imgEl.src = card.webformatURL;
 //     imgEl.width = 250;
@@ -48,7 +48,7 @@
 //     console.log(inputValue);
 
 //     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${inputValue}`).then(response => response.json()).then(data => renderMarkup(data.drinks)).catch(error => console.log(error))
-    
+
 // }
 
 // function markUpCoctails({strDrinkThumb,strDrink}) {
@@ -64,3 +64,47 @@
 //     );
 // }
 
+// ЗАДАЧА 3
+// НАПИШІТЬ ПАГІНАЦІЮ, ДЛЯ ПЕРЕХОДУ ПО СТОРІНКАХ
+//https://docs.github.com/en/rest/search?apiVersion=2022-11-28#search-user
+
+const inputSearchEl = document.querySelector("#input");
+const formSearchEl = document.querySelector("#form");
+const btnLoadMore = document.querySelector(".js-btn");
+const boxEl = document.querySelector(".elements");
+
+formSearchEl.addEventListener("submit", handleSearchElements);
+
+function handleSearchElements(event) {
+  event.preventDefault();
+
+  const dataInput = inputSearchEl.value;
+  console.log(dataInput);
+
+  const pageCount = 1;
+
+  fetch(
+    `https://api.github.com/search/users?q=${dataInput}&client_id=67684cabc84f94f0938e&client_secret=782ea639550c1b5d986bdd8129813652ed04c92c&page=${pageCount}`
+  )
+    .then((result) => result.json())
+    .then((data) => {
+      if (data.items.length > 1) {
+        renderMarkupUsers(data.items);
+        pageCount += 1;
+      } else {
+        alert("Розробники скінчилися))");
+      }
+    })
+    .catch((error) => console.log(error));
+}
+
+function createUser({ login, avatar_url }) {
+  const userEl = `<div><img src='${avatar_url}' alt='${login}'><h2>${login}</h2></div>`;
+  boxEl.insertAdjacentHTML("beforeend", userEl);
+}
+
+function renderMarkupUsers(array) {
+  array.forEach((person) => createUser(person));
+}
+
+btnLoadMore.addEventListener("click", handleSearchElements);
