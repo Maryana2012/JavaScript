@@ -74,6 +74,9 @@ const btnLoadMore = document.querySelector(".js-btn");
 const boxEl = document.querySelector(".elements");
 
 formSearchEl.addEventListener("submit", handleSearchElements);
+btnLoadMore.addEventListener("click", handleSearchElements);
+
+let pageCount = 1;
 
 function handleSearchElements(event) {
   event.preventDefault();
@@ -81,7 +84,6 @@ function handleSearchElements(event) {
   const dataInput = inputSearchEl.value;
   console.log(dataInput);
 
-  const pageCount = 1;
 
   fetch(
     `https://api.github.com/search/users?q=${dataInput}&client_id=67684cabc84f94f0938e&client_secret=782ea639550c1b5d986bdd8129813652ed04c92c&page=${pageCount}`
@@ -91,6 +93,7 @@ function handleSearchElements(event) {
       if (data.items.length > 1) {
         renderMarkupUsers(data.items);
         pageCount += 1;
+        console.log(data.items);
       } else {
         alert("Розробники скінчилися))");
       }
@@ -107,4 +110,3 @@ function renderMarkupUsers(array) {
   array.forEach((person) => createUser(person));
 }
 
-btnLoadMore.addEventListener("click", handleSearchElements);
