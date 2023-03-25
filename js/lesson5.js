@@ -42,14 +42,14 @@
 // Оптимізуйте роботу scroll та resize за допомогою бібліотеки lodash  підключивши скрипт 
 //* <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script> *//
 
-function scrollCheck() {
-    console.log('scroll');
-}
+// function scrollCheck() {
+//     console.log('scroll');
+// }
 
-function resizeCheck() {
-    console.log('resize');
-}
+// function resizeCheck() {
+//     console.log('resize');
+// }
 
-addEventListener('scroll', _.throttle(scrollCheck, 500));
-addEventListener('resize', _.throttle(resizeCheck, 500));
+// addEventListener('scroll', _.throttle(scrollCheck, 500));
+// addEventListener('resize', _.throttle(resizeCheck, 500));
 
